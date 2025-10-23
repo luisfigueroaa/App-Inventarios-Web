@@ -16,7 +16,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0'  # usa la tuya
+          flutter-version: '3.35.6'  # usa la tuya
 
       - name: Build Flutter Web
         run: flutter build web --release --base-href "/App-Inventarios-Web/"
