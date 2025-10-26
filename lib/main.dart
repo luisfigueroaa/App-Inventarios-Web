@@ -101,7 +101,7 @@ class PantallaPrincipal extends StatelessWidget {
                     },
                     child: const Text('GUARDAR'),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () {
                       // TODO: Acción botón 2
