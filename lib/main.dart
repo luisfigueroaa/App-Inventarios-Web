@@ -36,17 +36,17 @@ class PantallaPrincipal extends StatelessWidget {
                     onPressed: () {
                       // TODO: Acción para leer código
                     },
-                    child: const Text('Leer código'),
+                    child: const Text('LEER CÓDIGO'),
                   ),
                   const SizedBox(width: 20),
                   ElevatedButton(
                     onPressed: () {
                       // TODO: Acción para limpiar datos
                     },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.redAccent,
-                    ),
-                    child: const Text('Limpiar'),
+                    //style: ElevatedButton.styleFrom(
+                    //  backgroundColor: Colors.redAccent,
+                    //),
+                    child: const Text('LIMPIAR'),
                   ),
                 ],
               ),
@@ -61,7 +61,6 @@ class PantallaPrincipal extends StatelessWidget {
                   mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
                   children: [
-                    // 🔸 Cada bloque puedes editarlo a tu gusto
                     _buildBloque('UID:', 'N/A'),
                     _buildBloque('NUMERO DE LOTE:', 'N/A'),
                     _buildBloque('NOMBRE DEL REACTIVO:', 'N/A'),
@@ -73,6 +72,46 @@ class PantallaPrincipal extends StatelessWidget {
                     _buildBloque('ESTADO:', 'N/A'),
                   ],
                 ),
+              ),
+            ),
+
+            // 🔹 Label centrado abajo
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: Text(
+                'ACTUALIZAR DATOS:',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+
+            // 🔹 Dos botones juntos y centrados abajo
+            Padding(
+              padding: const EdgeInsets.only(bottom: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      // TODO: Acción botón 1
+                    },
+                    child: const Text('GUARDAR'),
+                  ),
+                  const SizedBox(width: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      // TODO: Acción botón 2
+                    },
+                    //style: ElevatedButton.styleFrom(
+                    //  backgroundColor: Colors.green,
+                    //),
+                    child: const Text('ENVIAR'),
+                  ),
+                ],
               ),
             ),
           ],
